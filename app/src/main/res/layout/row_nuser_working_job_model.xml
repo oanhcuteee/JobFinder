@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/bullet_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:elevation="0dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="0dp"
+            android:backgroundTint="@color/primary_color2">
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_holder"
+        android:layout_toEndOf="@+id/bullet_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/topSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/posted_job_job_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="@string/post_job_title"/>
+
+        </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/middleSection"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/topSection"-->
+<!--            android:layout_marginTop="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/layoutmiddleSection1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/NumRecTitle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:text="@string/Ji_num_of_rec_title"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/NumOfRecruits"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="italic"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:text="@string/Ji_num_of_recruits"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="italic"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:text="@string/Ji_sub"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/layoutmiddleSection2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/layoutmiddleSection1"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/Ji_recruited"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:text="@string/Ji_recruited1"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/NumOfRecruited"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="italic"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:text="@string/Ji_num_of_recruits"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="italic"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:text="@string/Ji_sub"/>-->
+<!--            </LinearLayout>-->
+
+
+<!--        </RelativeLayout>-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

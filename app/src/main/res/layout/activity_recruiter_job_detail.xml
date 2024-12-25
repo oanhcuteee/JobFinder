@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.JobDetails.RecruiterJobDetailActivity"
+    android:orientation="vertical"
+    android:background="@color/home_bg">
+
+<!--    top nav-->
+    <RelativeLayout
+        android:id="@+id/activity_user_management_top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/transparent_background"
+            android:drawableStart="@drawable/ic_back24px"/>
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/job_detail_title"
+            android:textColor="@color/primary_color1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/detail_job_scroll_view"
+        android:layout_below="@+id/activity_user_management_top_nav"
+        android:layout_above="@id/detail_job_btn_holder"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+<!--                img and rec_name-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imgWrap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="40dp"
+                        android:layout_margin="2dp"
+                        app:cardElevation="0dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_centerHorizontal="true">
+                        <ImageView
+                            android:id="@+id/buserLogo"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/image_loading_80px"
+                            android:background="@null"
+                            tools:ignore="ContentDescription"/>
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+                <!--            input title-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/transparent_background"
+                        android:orientation="vertical"
+                        android:layout_marginStart="-10dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/job_title_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/suitcase"
+                            tools:ignore="ContentDescription"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"/>
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none"
+                            android:layout_toEndOf="@id/job_title_icon"
+                            android:layout_marginBottom="20dp"
+                            android:layout_centerVertical="true"
+                            >
+                            <TextView
+                                android:id="@+id/job_detail_job_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/post_job_title"
+                                android:textSize="26sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/primary_color2"
+                                android:maxLines="1"/>
+
+                        </HorizontalScrollView>
+
+                    </RelativeLayout>
+
+<!--                job type-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_type"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_color1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_type"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:id="@+id/job_detail_job_type"/>
+
+                </LinearLayout>
+
+                <!--            salary-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/salary"
+                            android:textSize="18sp"
+                            android:textColor="@color/primary_color1"
+                            android:textStyle="bold"/>
+                        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/salary"
+                            android:textSize="17sp"
+                            android:textColor="@color/income_color"
+                            android:id="@+id/job_detail_salary"
+                            android:textStyle="bold"/>
+                        
+                    </LinearLayout>
+
+                    
+
+                </LinearLayout>
+
+                <!--            employee amount-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/employee_amount"
+                            android:textSize="18sp"
+                            android:textColor="@color/primary_color1"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:layout_marginEnd="40dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/employee_amount"
+                            android:textSize="17sp"
+                            android:textColor="@color/black"
+                            android:id="@+id/job_detail_emp_amount" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--            start time-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/start_time"
+                            android:textSize="18sp"
+                            android:textColor="@color/primary_color1"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/start_time"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:id="@+id/job_detail_start_time" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--            end time-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/end_time"
+                            android:textSize="18sp"
+                            android:textColor="@color/primary_color1"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/end_time"
+                            android:textSize="17sp"
+                            android:textColor="@color/black"
+                            android:id="@+id/job_detail_end_time" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--            work shift-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shift"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_color1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shift"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:id="@+id/job_detail_work_shift"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"/>
+
+                </LinearLayout>
+
+                <!--            address-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rec_address"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_color1"
+                        android:textStyle="bold"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rec_address"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:maxLines="2"
+                            android:id="@+id/job_detail_address" />
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <!--            input job des-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_des"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_color1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_des"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:id="@+id/job_detail_des"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+<!--button holder-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:id="@+id/detail_job_btn_holder"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/transparent_background"
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/applicant_btn">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wallet_btn_shape"
+                    android:text="@string/applicant"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/applied_list_btn"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wallet_btn_shape"
+                    android:text="@string/Jd_delete"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/delete_btn"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:elevation="10dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+</RelativeLayout>

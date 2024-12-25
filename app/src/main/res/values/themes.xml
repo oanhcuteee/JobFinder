@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    <style name="Base.Theme.JobFinder" parent="Theme.AppCompat.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;-->
+<!--    </style>-->
+
+    <style name="Base.Theme.JobFinder" parent="Theme.AppCompat.DayNight.NoActionBar"/>
+
+    <style name="Theme.JobFinder" parent="Base.Theme.JobFinder" />
+
+<!--full màn hình-->
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="NavTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="seekbar_filter" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge" >
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/primary_color2</item>
+        <item name="colorOnPrimary">@color/primary_color2</item>
+        <item name="colorOnSurface">@color/primary_color2</item>
+    </style>
+</resources>

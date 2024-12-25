@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/filter_border_btn_selected" /> <!-- Màu nền trắng -->
+    <corners android:radius="4dp" /> <!-- Độ cong của góc -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/primary_color2" />
+    <padding
+        android:left="8dp"
+        android:top="5dp"
+        android:right="8dp"
+        android:bottom="5dp" /> <!-- Khoảng cách giữa viền và nội dung của Button -->
+</shape>

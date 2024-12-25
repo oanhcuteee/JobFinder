@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        app:cardBackgroundColor="@color/white">
+        <LinearLayout android:id="@+id/linearRowlogogoogle"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:foreground="?android:attr/selectableItemBackground">
+            <ImageButton
+                android:background="@drawable/app_icon_bg"
+                android:id="@+id/btnLogo"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="40dp"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="9.22dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/app_icon"
+                tools:ignore="ContentDescription"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnapplicationsen"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="0.86"
+                android:orientation="vertical">
+<!--                <TextView android:ellipsize="end"-->
+<!--                    android:id="@+id/txtApplicationsen"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:singleLine="true"-->
+<!--                    tools:text="Aplication sent"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:textColor="#150b3d"/>-->
+                <TextView android:id="@+id/txtApplicationsfo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5.27dp"
+                    android:layout_width="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="#514a6b"
+                    android:maxLines="2"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    tools:text="Applications for Google companies have entered for company review"/>
+                <LinearLayout android:id="@+id/linearRowduration"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDate"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2.64dp"
+                        android:layout_weight="0.68"
+                        android:layout_width="0dp" android:singleLine="true"
+                        tools:text="25 minutes ago"
+                        android:textSize="12sp"
+                        android:textColor="#a9a5b8"
+                        />
+                    <TextView
+                        android:ellipsize="end"
+                        android:id="@+id/txtDelete"
+                        android:background="@color/white"
+                        android:textColor="#ff4b4b"
+                        android:textSize="13sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1.32dp"
+                        android:layout_weight="0.32"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:layout_marginStart="124dp"
+                        android:text="@string/Jd_delete"
+                        android:textAllCaps="true"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

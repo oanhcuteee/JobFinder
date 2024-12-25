@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="txtTitle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#150b3d</item>
+    </style>
+
+    <style name="home_bg">
+        <item name="android:background">@color/home_bg</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/ratingStar</item>
+    </style>
+
+</resources>

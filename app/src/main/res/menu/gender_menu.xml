@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rec_TOB_private"
+        android:title="@string/edit_profile_gendermale"
+        />
+    <item
+        android:id="@+id/rec_TOB_state"
+        android:title="@string/edit_profile_genderfemale"
+        />
+    <item
+        android:id="@+id/rec_TOB_partnership"
+        android:title="@string/edit_profile_genderother"
+        />
+
+</menu>

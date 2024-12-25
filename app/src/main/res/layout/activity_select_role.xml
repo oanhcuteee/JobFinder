@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/motionLayout"
+    tools:context=".UI.SplashScreen.SelectRoleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/contentLayoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginAdminCardView"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top">
+
+                <ImageView
+                    android:id="@+id/icon_bg"
+                    android:layout_width="260dp"
+                    android:layout_height="260dp"
+                    android:layout_marginTop="20sp"
+                    app:layout_constraintVertical_bias="0.2"
+                    android:src="@drawable/app_icon_bg" />
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="260dp"
+                    app:layout_constraintVertical_bias="0.2"
+                    android:src="@drawable/app_icon_ct"
+                    android:layout_gravity="center|top"
+                    android:layout_alignTop="@id/icon_bg"
+                    android:layout_alignStart="@id/icon_bg" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/splash_title1"
+                android:textColor="@color/primary_color1"
+                android:textSize="38sp"
+                android:layout_marginTop="45dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/splash_title2"
+                android:textColor="@color/primary_color2"
+                android:textSize="38sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/splash_title3"
+                android:textColor="@color/primary_color1"
+                android:textSize="38sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contentLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.8"
+            android:orientation="vertical">
+
+            <!--            <Space-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_gravity="fill_vertical" />-->
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/splash_subtitle"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="16dp"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/loginasRecruiter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/splash_btn1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="@string/splash_recruiter"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/loginasSeeker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/splash_btn2"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="@string/splash_jobseeker"
+                    android:textSize="17sp"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

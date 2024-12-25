@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="165.63531dp"
+    android:viewportWidth="3545.5"
+    android:viewportHeight="2936.3">
+
+    <!--Căn chỉnh cho logo vào giữa bằng group-->
+    <group
+        android:translateX="50"
+        android:translateY="500">
+        <path
+            android:fillColor="@color/black"
+            android:pathData="M2073.6,272.7l462.8,0l0,674.1l-2,0c-16.1,410.5 -348.1,736.5 -762.6,736.5c-418.5,0 -762.6,-344.1 -762.6,-762.6l0,-181.1l670.1,0l0,152.9l-513.1,0l0,28.2c0,334 271.6,605.7 605.7,605.7c332,0 599.6,-265.6 605.7,-595.6l0,-503.1l-150.9,0l0,497c0,249.5 -207.3,450.7 -454.8,450.7c-209.3,0 -382.3,-142.9 -436.7,-330l163,0c46.3,104.6 150.9,177.1 273.7,177.1c167,0 301.8,-134.8 301.8,-301.8l0,-647.9z" />
+    </group>
+</vector>

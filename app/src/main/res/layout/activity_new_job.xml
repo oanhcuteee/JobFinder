@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.FindNewJobs.NewJobActivity"
+    tools:openDrawer="end"
+    android:id="@+id/rootNewJob"
+    android:background="@color/home_bg">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/findJobSwipe">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <LinearLayout
+                android:id="@+id/backBtnWrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp">
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="40dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/transparent_background"
+                    android:drawableStart="@drawable/ic_back24px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/search_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/backBtnWrap"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+
+                <SearchView
+                    android:id="@+id/search_view"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="46dp"
+                    android:background="@drawable/black_rounded_search"
+                    android:closeIcon="@drawable/ic_search_close20px"
+                    android:iconifiedByDefault="false"
+                    android:queryBackground="@drawable/transparent_background"
+                    android:searchIcon="@drawable/ic_search_search24px"
+                    android:queryHint="@string/hint_search"/>
+
+                <LinearLayout
+                    android:id="@+id/filter_wrap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ic_filter_background"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageButton
+                        android:id="@+id/filterIcon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_search_filter24px"
+                        android:background="@color/primary_color2"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/search_section"
+                android:layout_marginTop="20dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/newJobHomeRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:listitem="@layout/new_jobs_item_home"/>
+
+                <ImageView
+                    android:id="@+id/noDataImage"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/data_not_found"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:elevation="10dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loading" />
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+    <!-- Menu filter -->
+    <include
+        android:id="@+id/slideMenu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        layout="@layout/custom_filter_layout" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

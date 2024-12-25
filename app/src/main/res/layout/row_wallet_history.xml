@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/walletHistoryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:background="@drawable/app_icon_bg"
+                    android:id="@+id/wallet_history_logo"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/app_icon"
+                    tools:ignore="ContentDescription"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginStart="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bank_name"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:id="@+id/wallet_history_card_bank"
+                            android:maxLines="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card_number"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:id="@+id/wallet_history_card_num"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wallet_amount"
+                            android:id="@+id/wallet_history_amount"
+                            android:maxLines="1"
+                            android:gravity="end"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="date"
+                            android:id="@+id/wallet_history_date"
+                            android:maxLines="1"
+                            android:gravity="end"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

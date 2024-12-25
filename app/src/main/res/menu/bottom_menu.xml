@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="@string/ic_home"
+        android:icon="@drawable/ic_menu_home_selector"
+        />
+
+    <item
+        android:id="@+id/managermentJob"
+        android:title="@string/ic_jobManagement"
+        android:icon="@drawable/ic_menu_job_selector"
+        />
+
+    <item
+        android:id="@+id/notify"
+        android:title="@string/ic_notify"
+        android:icon="@drawable/ic_menu_notify_selector"
+        />
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/ic_profile"
+        android:icon="@drawable/ic_menu_profile_selector"
+        />
+
+</menu>

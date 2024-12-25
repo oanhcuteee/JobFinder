@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="grey">#EEEEEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#11B800</color>
+    <color name="yellow">#E4B300</color>
+    <color name="red">#E30000</color>
+    <color name="pink">#EC00FD</color>
+    <color name="blue">#005ED3</color>
+    <color name="orange">#FF9800</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="purple">#9C27B0</color>
+    <color name="teal">#009688</color>
+    <color name="ratingStar">#ffdf00</color>
+
+    <color name="bottom_nav_color">#636363</color>
+    <color name="grey_hint_ForgotPass">#8C8C8C</color>
+    <color name="filter_border_btn_default">#E4E4E4</color>
+    <color name="filter_border_btn_selected">#FFD9B4</color>
+
+
+    <color name="primary_color1">#130160</color>
+    <color name="primary_color2">#FCA34D</color>
+    <color name="primary_color3">#FFD6AD</color>
+    <color name="primary_color4">#51C0DC</color>
+<!--    <color name="home_bg">#8BC6DDE8</color>-->
+    <color name="home_bg">#E1E1E1</color>
+
+    <color name="click_link">#0872F6</color>
+    <color name="profile_backfround">#F6F6F6</color>
+    <color name="delete_notification_btn">#ff4b4b</color>
+
+    <color name="income_color">#50C878</color>
+    <color name="expense_color">#EA3C53</color>
+    <color name="gray">#646464</color>
+
+    <color name="selected_tab_jobhistory">#51C0DC</color>
+    <color name="unselected_tab_jobhistory">#CDD6D8</color>
+
+    <color name="bg_barChart">#5358C1</color>
+    <color name="filter_color">#95C4CA</color>
+    <color name="payment_success_color">#77CC00</color>
+    <color name="blue_zalo_color">#006FFF</color>
+
+
+
+</resources>

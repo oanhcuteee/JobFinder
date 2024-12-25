@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_add_wallet_layout"
+        android:orientation="vertical"
+        style="@style/home_bg"
+        android:gravity="center_horizontal"
+        android:paddingStart="25dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="25dp"
+        android:background="@color/home_bg">
+
+<!--card preview-->
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/add_wallet_card_preview">
+
+            <FrameLayout
+                android:id="@+id/add_wallet_card_preview_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wallet_blue_bg">
+
+                <ImageView
+                    android:id="@+id/imageMainAddWalletImage"
+                    android:layout_gravity="center"
+                    android:layout_width="320dp"
+                    android:layout_height="170dp"
+                    android:scaleType="fitXY"
+                    tools:src="@drawable/img_mask_group"/>
+
+                <LinearLayout
+                    android:id="@+id/walletInfoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="22.4dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginBottom="22.4dp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtWalletBankName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/bank_name"
+                        android:textColor="@color/grey"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/walletAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/wallet_amount"
+                        android:textColor="@color/white"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/walletId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/card_number"
+                        android:textColor="#ffef5f"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+<!--choose color-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/wallet_color_choosing"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textColor="#6b6b6b"
+                android:text="@string/choose_color"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/choose_color_blue"
+                    android:layout_width="41dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/wallet_blue_bg"
+                    />
+
+                <View
+                    android:id="@+id/choose_color_red"
+                    android:layout_width="41dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/wallet_red_bg" />
+
+                <View
+                    android:id="@+id/choose_color_green"
+                    android:layout_width="41dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/wallet_green_bg" />
+
+                <View
+                    android:id="@+id/choose_color_pink"
+                    android:layout_width="41dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/wallet_pink_bg" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--edit text bank name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_name"
+                android:textSize="22sp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:padding="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/choose_Bank"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="#6b6b6b"
+                android:textSize="20sp"
+                android:background="@drawable/edittext_outline"
+                android:id="@+id/txt_bank" />
+
+        </LinearLayout>
+
+<!--edit text card number-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/card_number"
+                android:textSize="22sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:padding="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card_number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColorHint="#6b6b6b"
+                android:textSize="20sp"
+                android:background="@drawable/edittext_outline"
+                android:id="@+id/add_wallet_card_num_edit_txt"/>
+
+        </LinearLayout>
+
+<!--exp date-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exp_date"
+                android:textSize="22sp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp">
+                    <TextView
+                        android:id="@+id/txt_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:hint="@string/year"
+                        android:textColorHint="#6b6b6b"
+                        android:textSize="20sp"
+                        android:background="@drawable/edittext_outline"
+                        android:padding="14dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp">
+                    <TextView
+                        android:id="@+id/txt_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:hint="@string/month"
+                        android:textColorHint="#6b6b6b"
+                        android:textSize="20sp"
+                        android:background="@drawable/edittext_outline"
+                        android:padding="14dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+<!--        button-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_card"
+                    android:textSize="20sp"
+                    android:background="@drawable/wallet_btn_shape"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="15dp"
+                    android:id="@+id/add_card_btn" />
+            </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</layout>

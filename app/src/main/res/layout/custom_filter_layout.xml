@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/filter"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp">
+
+        <ScrollView
+            android:id="@+id/slideMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_marginBottom="50dp">
+
+            <RelativeLayout
+                android:id="@+id/select_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/JT_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/sort_JT_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort_JobTitle"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentStart="true"/>
+
+                    <LinearLayout
+                        android:id="@+id/JT_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/sort_JT_title"
+                        android:layout_alignParentStart="true">
+
+                        <Button
+                            android:id="@+id/JT_all"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/sort_JT_All"
+                            android:textColor="@color/black"
+                            android:textSize="14.5sp"
+                            android:textAllCaps="false"
+                            android:layout_marginEnd="12dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:background="@drawable/custom_filter_btn_default"/>
+
+                        <Button
+                            android:id="@+id/JT_AtoZ"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/sort_JT_AtoZ"
+                            android:textColor="@color/black"
+                            android:textSize="14.5sp"
+                            android:textAllCaps="false"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:background="@drawable/custom_filter_btn_default"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/recName_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/JT_section"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:id="@+id/sort_recName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort_Recname"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentStart="true"/>
+
+                    <LinearLayout
+                        android:id="@+id/recName_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/sort_recName"
+                        android:layout_alignParentStart="true">
+
+                        <Button
+                            android:id="@+id/rec_all"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/sort_Rec_All"
+                            android:textColor="@color/black"
+                            android:textSize="14.5sp"
+                            android:textAllCaps="false"
+                            android:layout_marginEnd="12dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:background="@drawable/custom_filter_btn_default"/>
+
+                        <Button
+                            android:id="@+id/rec_AtoZ"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/sort_Rec_AtoZ"
+                            android:textColor="@color/black"
+                            android:textSize="14.5sp"
+                            android:textAllCaps="false"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:background="@drawable/custom_filter_btn_default"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/postedTime_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/recName_section"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:id="@+id/sort_PT_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort_postedTime"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentStart="true"/>
+
+                    <LinearLayout
+                        android:id="@+id/postedTime_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/sort_PT_Title"
+                        android:layout_alignParentStart="true">
+
+                        <LinearLayout
+                            android:id="@+id/PT_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="10dp">
+                            <Button
+                                android:id="@+id/PT_anytime"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/sort_PT_Anytime"
+                                android:textColor="@color/black"
+                                android:textSize="14.5sp"
+                                android:textAllCaps="false"
+                                android:layout_marginEnd="12dp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:background="@drawable/custom_filter_btn_default"/>
+
+                            <Button
+                                android:id="@+id/PT_newest"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/sort_PT_Newest"
+                                android:textColor="@color/black"
+                                android:textSize="14.5sp"
+                                android:textAllCaps="false"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:background="@drawable/custom_filter_btn_default"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Button
+                                android:id="@+id/PT_thisMonth"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/sort_PT_thisMonth"
+                                android:textColor="@color/black"
+                                android:textSize="14.5sp"
+                                android:textAllCaps="false"
+                                android:layout_marginEnd="12dp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:background="@drawable/custom_filter_btn_default" />
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:background="@drawable/transparent_background"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/worktype_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/postedTime_section"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:id="@+id/sort_worktype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort_workTypes"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentStart="true"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input_box_filter"
+                        android:layout_below="@+id/sort_worktype"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp">
+
+                        <Spinner
+                            android:id="@+id/workTypeSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@android:color/transparent"
+                            android:layout_centerVertical="true"
+                            android:spinnerMode="dropdown"
+                            android:dropDownHeight="150dp"
+                            android:visibility="visible"/>
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/ic_dropdown18px"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/workshift_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/worktype_section"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:id="@+id/sort_workshift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort_workShift"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentStart="true"/>
+
+                    <LinearLayout
+                        android:id="@+id/workshift_wrap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/sort_workshift"
+                        android:layout_alignParentStart="true">
+
+                        <com.google.android.material.slider.RangeSlider
+                            android:id="@+id/workshiftSlider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:valueFrom="0"
+                            android:valueTo="24"
+                            app:values="@array/initial_WShift_Slider_values"
+                            android:stepSize="1"
+                            app:labelBehavior="withinBounds"
+                            app:trackHeight="10dp"
+                            app:thumbColor="@color/primary_color2"
+                            app:tickColor="@color/primary_color2"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/salaryRange_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/workshift_section"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:id="@+id/sort_salary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort_salary"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentStart="true"/>
+
+                    <LinearLayout
+                        android:id="@+id/salary_wrap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/sort_salary"
+                        android:layout_alignParentStart="true">
+
+                        <com.google.android.material.slider.RangeSlider
+                            android:id="@+id/rangeslider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:valueFrom="0.0"
+                            android:valueTo="100000.0"
+                            app:values="@array/initial_slider_values"
+                            android:stepSize="5000.0"
+                            app:labelBehavior="withinBounds"
+                            app:trackHeight="10dp"
+                            app:thumbColor="@color/primary_color2"
+                            app:tickColor="@color/primary_color2"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/button_section"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:id="@+id/resetBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sort_resetCond"
+                    android:textColor="@color/black"
+                    android:textSize="14.5sp"
+                    android:textAllCaps="false"
+                    android:elevation="0dp"
+                    android:background="@drawable/reset_filter_btn"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/applyBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sort_applyCond"
+                    android:textColor="@color/black"
+                    android:textSize="14.5sp"
+                    android:textAllCaps="false"
+                    android:elevation="0dp"
+                    android:background="@drawable/apply_filter_btn"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

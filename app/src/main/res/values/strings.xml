@@ -1,0 +1,579 @@
+<resources>
+    <string name="app_name">Jobs Finder</string>
+    <string name="app_name1">Jobs</string>
+    <string name="app_name2">Finder</string>
+
+
+    <!--    splash screen-->
+    <string name="splash_title1">Find your</string>
+    <string name="splash_title2">dream job</string>
+    <string name="splash_title3">here!</string>
+    <string name="splash_subtitle">Login as:</string>
+    <string name="splash_recruiter">Recruiter</string>
+    <string name="splash_jobseeker">Job seeker</string>
+    <string name="splash_admin">Login as Admin</string>
+
+
+    <!--    Login-->
+    <string name="login_btn">Login</string>
+    <string name="welcome_rec1">Glad to see</string>
+    <string name="welcome_rec2">you back recruiter!</string>
+    <string name="welcome_seek1">Welcome back </string>
+    <string name="welcome_seek2">to your journey!</string>
+    <string name="hintUsername">Email</string>
+    <string name="hintPassword">Password</string>
+    <string name="create_acc">Don\'t have an account?</string>
+    <string name="forgot_pass">Forgot password?</string>
+    <string name="forgot_pass_title">Forgot password</string>
+    <string name="error_invalid_email">Empty or invalid email</string>
+    <string name="error_pass">Password is blank or incorrect (at least 6 characters)</string>
+    <string name="error_email_pass">Please check the fields again</string>
+    <string name="login_failed">Login failed…Please check again</string>
+    <string name="error_wrong_passwordOrUsername">Email does not exist or password is incorrect</string>
+    <string name="wrong_role">Login with wrong role!</string>
+    <string name="duplicate_phone">Duplicate phone number</string>
+    <string name="fingerAuth_error">Authorize error</string>
+    <string name="fingerAuth_success">Authorize success</string>
+    <string name="fingerAuth_failed">Authorize failed</string>
+    <string name="fingerAuth_title">Log in with biometric authentication</string>
+    <string name="fingerAuth_dialogtitle">Biometric activation failed</string>
+    <string name="fingerAuth_dialogSubtitle">If you just changed your password or want to sign in with a different account, use your password to sign in again</string>
+    <string name="fingerAuth_usePassword">Use account password</string>
+
+
+    <!--    register-->
+    <string name="register_btn">Register</string>
+    <string name="return_login_seek">Start looking for work</string>
+    <string name="return_login_rec">Start recruiting</string>
+    <string name="hintrePassword">Re-enter password</string>
+    <string name="return_login">Already have an account?</string>
+    <string name="error_invalid_name">Name is blank or has an invalid length (>50)</string>
+    <string name="error_invalid_hotline">Hotline is empty or has an invalid length (=10)</string>
+    <string name="error_invalid_phone">Phone is empty or has an invalid length (=10)</string>
+    <string name="error_invalid_addr">Address is blank</string>
+    <string name="error_invalid_reEnterPass">Re-enter password is blank or does match</string>
+    <string name="register_success">Register success!</string>
+    <string name="register_failed">Register failed!</string>
+
+
+    <!--    Nhà tuyển dụng-->
+    <string name="register_title_rec1">Register to becoming</string>
+    <string name="register_title_rec2">a recruiter</string>
+    <string name="note_register">(Scrolldown and complete all the fields below)</string>
+    <string name="rec_name">Recruiter name</string>
+    <string name="rec_address">Address</string>
+    <string name="rec_taxcode">Tax code</string>
+    <string name="rec_hotline">Hotline</string>
+    <string name="rec_description">Description</string>
+    <string name="rec_description_title">Say hi and briefly introduce yourself!</string>
+    <string name="rec_foundationDay">Foundation day</string>
+    <string name="rec_typeOfBusiness">Type of business</string>
+    <string name="rec_TOB_private">Private enterprise</string>
+    <string name="rec_TOB_state">State-owned enterprise</string>
+    <string name="rec_TOB_partnership">Partnership enterprise</string>
+    <string name="rec_TOB_shareholding">Shareholding enterprise</string>
+    <string name="rec_TOB_liability">Limited liability</string>
+    <string name="rec_sectors">Business Sectors</string>
+    <string name="rec__sec_ECommerce">E-commerce</string>
+    <string name="rec_sec_realestate">Real Estate</string>
+    <string name="rec_sec_manufacturing">Manufacturing</string>
+    <string name="rec_sec_FandB">F&amp;B</string>
+    <string name="rec_sec_finance">Financial Business</string>
+    <string name="rec_sec_tourism">Tourism </string>
+    <string name="rec_sec_other">Other services</string>
+
+    <!--    Người tìm việc-->
+    <string name="register_title_seek1">Prepare to find</string>
+    <string name="register_title_seek2">your dream jobs</string>
+    <string name="seek_age">Age</string>
+    <string name="seek_phone">Phone numbers</string>
+    <string name="seek_name">User name</string>
+
+
+    <!--    Forgot password-->
+    <string name="FP_Title1">Check your email</string>
+    <string name="FP_Title2">Successfully</string>
+    <string name="FP_subTitle1">To reset your password, you need your email</string>
+    <string name="FP_subTitle1a">that can be authenticated</string>
+    <string name="FP_subTitle2">We have sent the reset password to the email address</string>
+    <string name="FP_resetPassBtn">Reset password</string>
+    <string name="FP_backToLoginBtn">Back to Login</string>
+    <string name="FP_toast">The link has been sent</string>
+    <string name="FP_Emailnot_registered">Email is not registered</string>
+    <string name="FP_error_unknown">Error Unknown</string>
+
+
+    <!--    Home-->
+    <string name="backpress_ask">Press back again to exit</string>
+    <string name="ic_home">Home</string>
+    <string name="ic_jobManagement">Management</string>
+    <string name="ic_notify">Notification</string>
+    <string name="ic_profile">Profile</string>
+    <!--    Nuser-->
+    <string name="grid_findNewJob">Find new jobs</string>
+    <string name="grid_wallet">Wallet</string>
+    <string name="grid_job_applied">Jobs applied</string>
+    <string name="grid_job_checkin">Jobs check in</string>
+    <string name="grid_reports">Reports</string>
+    <string name="grid_saveJob">Saved</string>
+    <string name="grid_statistical">Statistical</string>
+    <string name="grid_jobHistory">Job history </string>
+
+    <!--    Buser-->
+    <string name="grid_recruit">Recruit</string>
+    <string name="grid_recruit_posted">Recruit posted</string>
+
+
+    <!--    Notification-->
+    <string name="notification_title">Notification</string>
+    <string name="no_noti">No notification</string>
+    <string name="from">From:</string>
+    <string name="BUsername">BUser name</string>
+    <string name="close_btn">Close</string>
+    <string name="add_card_to_user_wallet">Added card to your wallet</string>
+    <string name="from_wallet">from wallet</string>
+    <string name="to_wallet">to wallet</string>
+    <string name="refund">Refund</string>
+    <string name="from_job">From job:</string>
+    <string name="applied">applied to your job</string>
+    <string name="reject_from">You have been rejected from</string>
+    <string name="approve_from">You have been approved from</string>
+    <string name="reject_success">Rejected</string>
+    <string name="approve_success">Approved</string>
+    <string name="delete_all">Delete all</string>
+    <string name="from_job_text">from job</string>
+
+    <!--    Wallet-->
+    <string name="wallet_title">Wallet</string>
+    <string name="add_wallet">Add Wallet</string>
+    <string name="wallet_history">History</string>
+    <string name="bank_name">Bank</string>
+    <string name="wallet_amount">Amount</string>
+    <string name="card_number">Card number</string>
+    <string name="choose_color">Choose color</string>
+    <string name="exp_date">Expired date</string>
+    <string name="no_card">No card in wallet</string>
+    <string name="error_invalid_bank">Bank is blank</string>
+    <string name="error_invalid_exp_date">Expired date is blank</string>
+    <string name="error_invalid_card_num">Card number has at least 10 characters and maximum 16 characters</string>
+    <string name="add_card_success">Add card success</string>
+    <string name="add_card_fail">Fail to add card</string>
+    <string name="delete_card_success">Deleted</string>
+    <string name="add_cash_success">Add cash to card success</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="no_choose_bank">Bank is blank</string>
+    <string name="no_choose_year">Year is blank</string>
+    <string name="no_choose_month">Month is blank</string>
+    <string name="duplicate_card">This card already exist</string>
+    <string name="no_history">Nothing here</string>
+    <string name="choose_Bank">Choose bank</string>
+    <string name="all_card">All card</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="deposit">Deposit to wallet</string>
+    <string name="withdraw_success">Withdraw success</string>
+    <string name="deposit_success">Deposit success</string>
+    <string name="no_amount">Amount blank</string>
+    <string name="not_enough_money">Insufficient balance</string>
+    <string name="amount">Amount</string>
+    <string name="wallet_amount_title">Wallet amount:</string>
+    <string name="wallet_deposit_amount">Enter deposit amount!</string>
+    <string name="wallet_deposit_success">Payment successfully!</string>
+    <string name="wallet_deposit_failed">Payment cancel!</string>
+    <string name="wallet_deposit_error">Payment error!</string>
+    <string name="wallet_deposit_input_confirmBTN">Confirm</string>
+    <string name="wallet_deposit_orderPayment_title">Payment confirmation</string>
+    <string name="wallet_deposit_orderPayment_total">Total payment:</string>
+    <string name="wallet_deposit_payment">Pay by ZaloPay</string>
+
+
+    <!--    Button-->
+    <string name="delete">Delete card</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_cash">Add cash to card</string>
+    <string name="add_card">Add card</string>
+    <string name="Ok">Ok</string>
+
+
+    <!--    Profile-->
+    <string name="username">Username</string>
+    <string name="decoy_username">User Name</string>
+    <string name="profile_setting">Settings</string>
+    <string name="profile_account">Account</string>
+    <string name="profile_logout">Log out</string>
+    <string name="profile">Profile</string>
+    <string name="profile_edited">Profile edited</string>
+    <string name="profile_logout_toast">Log out successfully</string>
+    <string name="blank_tax_code">Tax code is blank</string>
+
+
+    <!-- Edit Profile -->
+    <string name="edit_profile">Edit profile</string>
+    <string name="edit_profile_img">Tap to edit image</string>
+    <string name="edit_profile_name">User name</string>
+    <string name="edit_profile_gender">Gender</string>
+    <string name="edit_profile_enterprise">Enterprise name</string>
+    <string name="edit_profile_email">Email</string>
+    <string name="edit_profile_phonenum">Phone number</string>
+    <string name="edit_profile_age">Age</string>
+    <string name="edit_profile_gendermale">Male</string>
+    <string name="edit_profile_genderfemale">Female</string>
+    <string name="edit_profile_genderother">Other</string>
+    <string name="edit_profile_save">Save</string>
+    <string name="edit_profile_enable">Edit enable</string>
+    <string name="edit_profile_disable">Edit disable</string>
+    <string name="edit_email">Emails are not allowed to be edited</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="profile_image_discard">Discard</string>
+    <string name="profile_image_choose">Choose profile image</string>
+    <string name="profile_image_please_choose">Please select image to upload</string>
+    <string name="profile_image_uploading">Uploading image</string>
+    <string name="profile_image_process">Processing</string>
+    <string name="profile_image_save_success">Image uploaded successfully</string>
+    <string name="profile_image_save_failed">Image uploaded failed</string>
+    <string name="profile_image_deleted_success">Image deleted success</string>
+    <string name="profile_image_delete_failed">Image deleted failed</string>
+    <string name="edit_profile_nothing_change">No changes have been made to profile</string>
+    <string name="profile_image_delete_confim">Confirm delete image</string>
+    <string name="profile_image_delete_confim_noti">Note: Deleting current image will return to the default avatar.</string>
+    <string name="profile_image_delete_confim_yes">Yes</string>
+    <string name="profile_image_delete_confim_no">No</string>
+    <string name="profile_cancle_edit_confirm">Confirm cancle edit</string>
+    <string name="profile_cancle_edit_confirm_noti">Note: Canceling the current edit will not be saved and will return to the information before editing.</string>
+
+
+    <string name="edit_taxcode">Tax code</string>
+    <string name="edit_description">Recruter description</string>
+    <string name="edit_SectorOfBusiness">Choose business type</string>
+    <string name="edit_typeOfBusiness">Choose business sectors</string>
+
+    <string name="error_invalid_des">Description is blank</string>
+    <string name="error_invalid_BusType">Business type is blank</string>
+    <string name="error_invalid_BusSec">Business sectors is blank</string>
+    <string name="error_invalid_Gender">Gender is blank</string>
+    <string name="error_invalid_Age">Age is blank or age is less than 18 or more than 80</string>
+    <string name="error_invalid_Tax">Tax code cannot be empty and must be 10 or 13 numbers</string>
+
+    <!-- Settings Profile -->
+    <string name="Setting">Setting</string>
+    <string name="Current_pass_title">Enter current password to confirm</string>
+    <string name="Current_pass">Enter current password</string>
+    <string name="Change_pass">Change password</string>
+    <string name="Biometric_login">Biometric Login</string>
+    <string name="Delete_acc">Delete account</string>
+    <string name="About_app">About app</string>
+    <string name="Change_newpass">Enter new Password</string>
+    <string name="Change_newpass_success">Password updated successfully.</string>
+    <string name="Change_newpass_failed">Failed to update password. Please try again.</string>
+    <string name="Confirm_newpass">Confirm new Password</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Confirm_change_pass">Confirm change password</string>
+    <string name="Confirm_delete_account">Confirm delete account</string>
+    <string name="Error_invalid_newpass">New password is blank or incorrect (at least 6 characters)</string>
+    <string name="Error_invalid_confirm_newpass">New password confirm is blank or does match</string>
+    <string name="re_authen_failed">Re-authentication failed. Please try again.</string>
+    <string name="account_deleted">Account deleted</string>
+    <string name="delete_account_failed">Delete account failed. Please try again.</string>
+
+
+    <!-- About app-->
+    <string name="about_title_app">About app</string>
+    <string name="about_desc_app">The Job Finder application is a platform that connects part-time job seekers with reputable employers, helping both parties save time and effort towards mutual benefits.</string>
+    <string name="about_title_us">About us</string>
+    <string name="about_desc_us">Our development team includes 2 members from Thang Long University, with the desire to create an effective, effort-saving solution for the problem of finding part-time jobs.</string>
+    <string name="about_title_goals">The goals</string>
+    <string name="about_desc_goals">Our goal is to become the leading part-time job search platform, providing quality and suitable job opportunities for everyone.</string>
+    <string name="about_title_feaAndBen">Features vs Benefits</string>
+    <string name="about_desc_feaAndBen">JobFinder provides key features such as job search, income management, candidate search, employee management, candidate evaluation,… and many other features to help you quickly achieve your set goals direction</string>
+
+
+    <!--    Find new job-->
+    <string name="hint_search">Search</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="sortby">Sort by</string>
+    <string name="sort_JobTitle">Job title</string>
+    <string name="sort_JT_All">All</string>
+    <string name="sort_JT_AtoZ">In order A-Z</string>
+    <string name="sort_Recname">Recruiter name</string>
+    <string name="sort_Rec_All">All</string>
+    <string name="sort_Rec_AtoZ">In order A-Z</string>
+    <string name="sort_postedTime">Posted time</string>
+    <string name="sort_PT_Anytime">Anytime</string>
+    <string name="sort_PT_Newest">Newest</string>
+    <string name="sort_PT_thisMonth">This month</string>
+    <string name="sort_workShift">Work shift</string>
+    <string name="sort_wShiftAM">Morning</string>
+    <string name="sort_wShiftPM">Afternoon</string>
+    <string name="sort_workTypes">Work types</string>
+    <string-array name="initial_WShift_Slider_values">
+        <item>0</item>
+        <item>24</item>
+    </string-array>
+    <string name="sort_salary">Salary range(/hour)</string>
+    <string name="send">Send</string>
+    <string name="applied_success">Apply success</string>
+    <string-array name="initial_slider_values">
+        <item>0.0</item>
+        <item>50000.0</item>
+    </string-array>
+    <string name="sort_resetCond">Reset</string>
+    <string name="sort_applyCond">Apply</string>
+    <string name="sort_applyFilterToast">Filter Applied</string>
+    <string name="sort_defaultSelectJobType">All Type</string>
+
+
+    <!--    List job item-->
+    <string name="Ji_recName">Recruiter name</string>
+    <string name="Ji_recAdd">Recruiter address</string>
+    <string name="Ji_position">Intern Java</string>
+    <string name="Ji_num_of_rec_title">Number of Recruits:</string>
+    <string name="Ji_num_of_recruits">3</string>
+    <string name="Ji_sub">Employees</string>
+    <string name="Ji_workTime">Worktime:</string>
+    <string name="Ji_recruited1">Recruited:</string>
+    <string name="Ji_recruited2">0</string>
+    <string name="Ji_posttime">45 minutes ago</string>
+    <string name="Ji_appliDeadlineTitle">Application deadline:</string>
+    <string name="Ji_appliDeadline">dd/mm/yyyy</string>
+    <string name="Ji_unit1">$</string>
+    <string name="Ji_salary">20,000</string>
+    <string name="Ji_unit2">VNĐ</string>
+    <string name="Ji_unit3">/Hour</string>
+
+    <!--    post job-->
+    <string name="post_job_title">Job title</string>
+    <string name="job_des">Job description</string>
+    <string name="salary">Salary (/hour)</string>
+    <string name="employee_amount">Employee amount</string>
+    <string name="start_time">Start date</string>
+    <string name="end_time">End date</string>
+    <string name="shift">Work shift</string>
+    <string name="shift_1">Start time</string>
+    <string name="shift_2">End time</string>
+    <string name="add_job">Post job</string>
+    <string name="shift_start_blank">Shift start time is blank</string>
+    <string name="shift_end_blank">Shift end time is blank</string>
+    <string name="end_shift_time_be4_start">Start time must before end time at least 1hr</string>
+    <string name="no_shift_choose">No shift been choosed</string>
+    <string name="no_post_job_title">Job title is blank</string>
+    <string name="no_emp_amount">Employee amount must smaller than 10</string>
+    <string name="no_address">Address is blank</string>
+    <string name="no_job_des">Job description is blank</string>
+    <string name="no_salary">Salary is blank</string>
+    <string name="post_job_success">Job posted</string>
+    <string name="no_start_time">No start date</string>
+    <string name="no_end_time">No end date</string>
+    <string name="end_time_be4_start">Start date must before end date</string>
+    <string name="job_type">Job type</string>
+    <string name="expense">Expense:</string>
+    <string name="total_cost">Total cost:</string>
+    <string name="app_cost">App cost: </string>
+    <string-array name="job_types_array">
+        <item>Retail Sales Associate</item>
+        <item>Food and Beverage Server</item>
+        <item>Administrative Assistant</item>
+        <item>Tutor</item>
+        <item>Barista</item>
+        <item>Cashier</item>
+        <item>Delivery Driver</item>
+        <item>Receptionist</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <!--    job detail-->
+    <string name="apply">Apply</string>
+    <string name="unapply">Unapply</string>
+    <string name="unapplied_success">Unapplied Success</string>
+    <string name="unapply_failed">Unapply Failed</string>
+    <string name="job_detail_title">Job detail</string>
+    <string name="jdetail_shift_1">7:30-14:30</string>
+    <string name="jdetail_shift_2">14:30-21:30</string>
+    <string name="status_row_posted_job">Status:</string>
+    <string name="status">Status</string>
+    <string name="status_working">Working</string>
+    <string name="status_recruiting">Recruiting</string>
+    <string name="status_closed">Closed</string>
+    <string name="temporarily_closed">Temporarily closed</string>
+    <string name="applicant">Applicant</string>
+    <string name="deleted_job">Job deleted</string>
+    <string name="Jd_delete">delete</string>
+
+    <!--    posted job-->
+    <string name="posted_job_title">Posted job</string>
+    <string name="no_posted_job">No job posted</string>
+
+    <!--    buser detail info-->
+    <string name="recruiter_info_title">Recruiter\'s information</string>
+    <!--    nuser detail info-->
+    <string name="seeker_info_title">Seeker\'s information</string>
+
+    <!--    applicants list-->
+    <string name="applicant_list_title">Applicants list</string>
+    <string name="no_applicant">No applicant yet</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="blank_age">Age is blank</string>
+    <string name="enough_Emp">Job is full</string>
+
+    <!--    applied job-->
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    <string name="Job_title">Job title:</string>
+    <string name="Applied_date">Applied time:</string>
+    <string name="no_data_applied_msg">Haven\'t applied for any jobs yet</string>
+
+    <!--    Report-->
+    <string name="create_request">Create request</string>
+    <string name="technical_report">Technical</string>
+    <string name="feedback_report">Feedback</string>
+    <string name="user_report">Report</string>
+    <string name="create_technical_report">Create technical support</string>
+    <string name="create_feedback">Create Feedback</string>
+    <string name="create_user_report">Create user report</string>
+    <string name="send_request">send request</string>
+    <string name="note">Note</string>
+    <string name="enter_note">Enter description</string>
+    <string name="report_status">Status</string>
+    <string name="your_status">Your status</string>
+    <string name="your_condition">Your status</string>
+    <string name="request_sent">Request sent</string>
+    <string name="request_sent_error">No requests have been submitted</string>
+
+
+    <string-array name="technical_array">
+        <item>Bank card connection error</item>
+        <item>Cannot save profile changes</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="feedback_array">
+        <item>App feedback</item>
+        <item>Service feedback</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="report_array">
+        <item>Report a user</item>
+        <item>Report a recruiter</item>
+    </string-array>
+
+    <!--    working job-->
+    <string name="job_management_title">Job management</string>
+    <string name="working_job_title">Working Job</string>
+    <string name="no_wkJob">No job is working</string>
+    <string name="no_emp">No employee in job</string>
+    <string name="empListTitle">Employee list</string>
+    <string name="check_in">Check in</string>
+    <string name="check_out">Check out</string>
+    <string name="checked">Checked</string>
+    <string name="checked_in">Checked in</string>
+    <string name="checked_out">Checked out</string>
+    <string name="working_job_short_title">Working Job</string>
+
+    <!--    check in-->
+    <string name="check_in_title">Check In</string>
+    <string name="late">Late</string>
+    <string name="in_time">In Time</string>
+    <string name="check_in_status">Checked in at: </string>
+    <string name="check_out_status">Checked out at: </string>
+    <string name="minute">minutes</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="confirm_check_in">Confirm</string>
+    <string name="unconfirmed">Unconfirmed</string>
+    <string name="at">at</string>
+    <string name="not_working_yet">Job is not working yet</string>
+    <string name="check_out_notice">Claim your salary\nat Job management</string>
+
+    <!--    salary tracking-->
+    <string name="salary_tracking_title">Salary tracking</string>
+    <string name="no_working">Job inactive</string>
+    <string name="salary_title">Salary</string>
+    <string name="note_title">Note</string>
+    <string name="working_time">Working day/time</string>
+    <string name="total_salary">Total</string>
+    <string name="worked_day">Work day</string>
+    <string name="end_job">End job</string>
+
+    <!--    job history-->
+    <string name="job_workingReview_title">Reviewed</string>
+    <string name="no_review">No review</string>
+    <string name="no_job_history">Blank history</string>
+    <string name="not_review">Not review yet</string>
+    <string name="save">Save</string>
+    <string name="review_nuser">Review your employee after finished job</string>
+    <string name="no_des">Blank detail review</string>
+    <string name="no_job_des2">Blank description</string>
+    <string name="review">Review</string>
+    <!--    watch reviewed nuser-->
+    <string name="review_rating_Average">Rating:</string>
+    <string name="review_rating_sub_title_default">(Not rated yet)</string>
+    <string name="review_recycler_title">Reviews from employers</string>
+    <string name="review_recycler_no_reviewed">Candidate has no reviews yet</string>
+    <string name="review_ex_comp_jobtitle">Completed job:</string>
+
+    <!--    statistical-->
+    <string name="Sta_mainTitle">Statistical</string>
+    <string name="Sta_IncomeExpend">Income and expenditure reports</string>
+    <string name="Sta_labelBarchart_income">Income</string>
+    <string name="Sta_labelBarchart_expenditure">Expenditure</string>
+    <string name="Sta_Monyea_select">Month/Year</string>
+    <string name="Sta_income_each_typeJob">Income for each type of job</string>
+    <string name="Sta_expense_each_typeJob">Expense for each type of job</string>
+    <string name="Sta_wallet">Wallet</string>
+    <string name="Sta_card">Card</string>
+    <string name="Sta_workingHourPMonth">Number of worked hours per month</string>
+    <string name="Sta_amountJobPostPMonth">Number of job posted per month</string>
+    <string name="Sta_year_select">Year</string>
+    <string name="Sta_workedHourPMonth_legend">Worked hours</string>
+    <string name="Sta_jobs_posted">Number of jobs posted</string>
+    <string name="Sta_jobs_posted_legend">Jobs posted</string>
+    <string-array name="months_array">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string name="week">Week</string>
+
+    <!--    Admin-->
+    <string name="admin_welcome">Welcome Admin</string>
+    <string name="grid_admin_accMana">Users Account</string>
+    <string name="grid_admin_Finance">Finance</string>
+    <string name="grid_admin_RepRes">Reports response</string>
+    <string name="grid_admin_logout">Logout</string>
+    <string name="grid_admin_changePass">Change Password</string>
+    <string name="no_report">No report yet</string>
+    <string name="close_report">Close report</string>
+    <string name="report_response1">The issue you reported has been resolved. \n Thank you for your feedback.</string>
+    <string name="technic_title">Technical</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="report_title">Report</string>
+    <string name="buser">Recruiter</string>
+    <string name="nuser">Seeker</string>
+    <string name="registered_amount">Report the number of registered users of the application</string>
+    <string name="admin_income">Income from app per year</string>
+    <string name="unit">VND</string>
+    <string name="user_managerment_title">User management</string>
+    <string name="no_user">No registered user</string>
+    <string name="email_title">Email: </string>
+    <string name="phone_num_title">Phone number: </string>
+    <string name="address_title">Address: </string>
+    <string name="role_title">Role: </string>
+    <string name="add_cash_to_wallet_btn">Add cash</string>
+    <string name="disable_acc">Disable</string>
+    <string name="enable_acc">Enable</string>
+    <string name="blank_sector">Blank sector</string>
+    <string name="to_wallet2">into wallet by admin</string>
+    <string name="disabled_account">This account is disabled</string>
+    <string name="active">Active</string>
+</resources>

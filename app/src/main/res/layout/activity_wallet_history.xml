@@ -1,0 +1,119 @@
+ <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+     android:background="@color/home_bg">
+        <!--title-->
+     <RelativeLayout
+         android:id="@+id/activity_wallet_top_nav"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingBottom="5dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginStart="15dp"
+         android:layout_marginEnd="15dp">
+
+         <Button
+             android:id="@+id/backButton"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:background="@drawable/transparent_background"
+             android:drawableStart="@drawable/ic_back24px"/>
+
+         <TextView
+             android:id="@+id/account"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="24sp"
+             android:text="@string/wallet_history"
+             android:textColor="@color/primary_color1"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             />
+
+     </RelativeLayout>
+<!--     choose card-->
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp">
+
+         <Spinner
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:dropDownVerticalOffset="60dp"
+             android:padding="10dp"
+             android:layout_marginEnd="20dp"
+             android:layout_marginStart="20dp"
+             android:background="@drawable/edittext_outline"
+             android:id="@+id/history_spinner"/>
+
+     </LinearLayout>
+<!--recycler view-->
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/recyclerWalletHistoryList"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="20dp"
+             android:layout_marginEnd="20dp"
+             android:layout_marginBottom="1.32dp"
+             android:gravity="center_horizontal"
+             android:orientation="vertical"
+             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+             tools:itemCount="6"
+             tools:listitem="@layout/row_wallet_history" />
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/no_wallet_history"
+             android:visibility="invisible">
+
+             <LinearLayout
+                 android:id="@+id/linearNoHistory"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginStart="16dp"
+                 android:layout_marginEnd="16dp"
+                 android:layout_marginTop="16dp"
+                 android:layout_marginBottom="16dp"
+                 android:gravity="center"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintBottom_toBottomOf="parent">
+                 <ImageView
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:id="@+id/no_history_img"
+                     android:src="@drawable/no_money"
+                     android:layout_gravity="center_horizontal"
+                     android:orientation="vertical" />
+
+                 <LinearLayout
+                     android:gravity="center"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="@string/no_history"
+                         android:textAppearance="?android:textAppearanceLarge" />
+                 </LinearLayout>
+
+             </LinearLayout>
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+     </RelativeLayout>
+
+    </LinearLayout>
+

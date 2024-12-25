@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jobs Finder</string>
+    <string name="app_name1">Jobs</string>
+    <string name="app_name2">Finder</string>
+
+    <!--    Splash screen-->
+    <string name="splash_title1">Tìm kiếm</string>
+    <string name="splash_title2">công việc mơ ước</string>
+    <string name="splash_title3">của bạn!</string>
+    <string name="splash_subtitle">Đăng nhập với tư cách:</string>
+    <string name="splash_recruiter">Nhà tuyển dụng</string>
+    <string name="splash_jobseeker">Tìm công việc</string>
+    <string name="splash_admin">Đăng nhập Admin</string>
+
+
+    <!--    Login-->
+    <string name="login_btn">Đăng nhập</string>
+    <string name="welcome_rec1">Chào mừng trở lại</string>
+    <string name="welcome_rec2">nhà tuyển dụng!</string>
+    <string name="welcome_seek1">Trở lại chuyến</string>
+    <string name="welcome_seek2">hành trình của bạn!</string>
+    <string name="hintUsername">Email</string>
+    <string name="hintPassword">Mật khẩu</string>
+    <string name="create_acc">Chưa có tài khoản?</string>
+    <string name="forgot_pass">Quên mật khẩu?</string>
+    <string name="forgot_pass_title">Quên mật khẩu</string>
+    <string name="error_invalid_email">Email trống hoặc không hợp lệ</string>
+    <string name="error_pass">Mật khẩu trống hoặc không chính xác (tối thiểu 6 kí tự)</string>
+    <string name="error_email_pass">Vui lòng kiểm tra lại các trường</string>
+    <string name="login_failed">Đăng nhập thất bại…Vui lòng kiểm tra lại</string>
+    <string name="error_wrong_passwordOrUsername">Email không tồn tại hoặc sai mật khẩu</string>
+    <string name="wrong_role">Đăng nhập sai vai trò!</string>
+    <string name="duplicate_phone">Trùng số điện thoại</string>
+    <string name="fingerAuth_error">Lỗi xác thực</string>
+    <string name="fingerAuth_success">Xác thực thành công</string>
+    <string name="fingerAuth_failed">Xác thực thất bại</string>
+    <string name="fingerAuth_title">Đăng nhập bằng xác thực sinh trắc học</string>
+    <string name="fingerAuth_dialogtitle">Kích hoạt sinh trắc thất bại</string>
+    <string name="fingerAuth_dialogSubtitle">Nếu bạn vừa thay đổi mật khẩu hoặc muốn đăng nhập bằng tài khoản khác, hãy sử dụng mật khẩu để đăng nhập một lần</string>
+    <string name="fingerAuth_usePassword">Sử dụng mật khẩu</string>
+
+
+    <!--    Register-->
+    <string name="register_btn">Đăng ký</string>
+    <string name="return_login_seek">Bắt đầu tìm việc</string>
+    <string name="return_login_rec">Bắt đầu tuyển dụng</string>
+    <string name="hintrePassword">Nhập lại mật khẩu</string>
+    <string name="return_login">Đã có tài khoản?</string>
+    <string name="error_invalid_name">Tên trống hoặc có độ dài độ dài không hợp lệ (>50) </string>
+    <string name="error_invalid_hotline">Hotline trống hoặc có độ dài không hợp lệ (=10)</string>
+    <string name="error_invalid_phone">SĐT trống hoặc có độ dài không hợp lệ (=10)</string>
+    <string name="error_invalid_addr">Địa chỉ trống</string>
+    <string name="error_invalid_reEnterPass">Nhập lại mật khẩu trống hoặc không khớp</string>
+    <string name="register_success">Đăng ký thành công!</string>
+    <string name="register_failed">Đăng ký thất bại!</string>
+
+
+    <!--    Nhà tuyển dụng-->
+    <string name="register_title_rec1">Đăng ký trở thành</string>
+    <string name="register_title_rec2">nhà tuyển dụng</string>
+    <string name="note_register">(Cuộn xuống và hoàn thành các trường dưới đây)</string>
+    <string name="rec_name">Tên nhà tuyển dụng</string>
+    <string name="rec_address">Địa chỉ</string>
+    <string name="rec_taxcode">Mã số thuế</string>
+    <string name="rec_hotline">Hotline</string>
+    <string name="rec_description">Mô tả</string>
+    <string name="rec_description_title">Gửi lời chào và giới thiệu ngắn gọn về bản thân tới nhà tuyển dụng!</string>
+    <string name="rec_foundationDay">Ngày thành lập</string>
+    <string name="rec_typeOfBusiness">Loại hình kinh doanh</string>
+    <string name="rec_TOB_private">Tư nhân</string>
+    <string name="rec_TOB_state">Doanh nghiệp nhà nước</string>
+    <string name="rec_TOB_partnership">Doanh nghiệp hợp doanh</string>
+    <string name="rec_TOB_shareholding">Doanh nghiệp cổ phần</string>
+    <string name="rec_TOB_liability">Doanh nghiệp TNHH</string>
+    <string name="rec_sectors">Lĩnh vực kinh doanh</string>
+    <string name="rec__sec_ECommerce">Thương mại điện tử</string>
+    <string name="rec_sec_realestate">Bất động sản</string>
+    <string name="rec_sec_manufacturing">Sản xuất</string>
+    <string name="rec_sec_FandB">F&amp;B</string>
+    <string name="rec_sec_finance">Dịch vụ tài chính</string>
+    <string name="rec_sec_tourism">Du lịch</string>
+    <string name="rec_sec_other">Dịch vụ khác</string>
+    <!--    Người tìm việc-->
+    <string name="register_title_seek1">Sẵn sàng tìm kiếm</string>
+    <string name="register_title_seek2">công việc mơ ước</string>
+    <string name="seek_age">Tuổi</string>
+    <string name="seek_phone">Số điện thoại</string>
+    <string name="seek_name">Tên người dùng</string>
+
+    <!--    Forgot password-->
+    <string name="FP_Title1">Kiểm tra email của bạn</string>
+    <string name="FP_Title2">Thành công!</string>
+    <string name="FP_subTitle1">Để đặt lại mật khẩu, bạn cần có email</string>
+    <string name="FP_subTitle1a">có thể truy cập và xác thực được</string>
+    <string name="FP_subTitle2">Chúng tôi đã gửi liên kết để đặt lại mật khẩu tới email</string>
+    <string name="FP_resetPassBtn">Đặt lại mật khẩu</string>
+    <string name="FP_backToLoginBtn">Trở lại đăng nhập</string>
+    <string name="FP_toast">Liên kết đặt lại mật khẩu đã được gửi</string>
+    <string name="FP_Emailnot_registered">Email chưa được đăng ký</string>
+    <string name="FP_error_unknown">Lỗi không xác định</string>
+
+    <!--    Home-->
+    <string name="backpress_ask">Chạm thêm lần nữa để thoát</string>
+    <string name="ic_home">Trang chủ</string>
+    <string name="ic_jobManagement">Quản lý</string>
+    <string name="ic_notify">Thông báo</string>
+    <string name="ic_profile">Hồ sơ</string>
+    <!--    Nuser-->
+    <string name="grid_findNewJob">Công việc mới</string>
+    <string name="grid_wallet">Ví</string>
+    <string name="grid_job_applied">Công việc ứng tuyển</string>
+    <string name="grid_job_checkin">Điểm danh</string>
+    <string name="grid_reports">Báo cáo</string>
+    <string name="grid_saveJob">Đã lưu</string>
+    <string name="grid_statistical">Thống kê</string>
+    <string name="grid_jobHistory">Lịch sử công việc</string>
+
+
+    <!--    Buser-->
+    <string name="grid_recruit">Tuyển dụng</string>
+    <string name="grid_recruit_posted">Bài đã đăng</string>
+
+
+    <!--    Notification-->
+    <string name="notification_title">Thông báo</string>
+    <string name="no_noti">Không có thông báo</string>
+    <string name="from">Người gửi:</string>
+    <string name="BUsername">Tên doanh nghiệp</string>
+    <string name="close_btn">Đóng</string>
+    <string name="add_card_to_user_wallet">Đã thêm thẻ vào ví của bạn</string>
+    <string name="to_wallet">đến ví</string>
+    <string name="refund">Hoàn trả</string>
+    <string name="from_job">Từ công việc:</string>
+    <string name="applied">đã ứng tuyển công việc</string>
+    <string name="reject_from">Bạn đã bị từ chối bởi việc</string>
+    <string name="approve_from">Bạn đã được thông qua bởi việc</string>
+    <string name="reject_success">Đã từ chối</string>
+    <string name="approve_success">Đã thông qua</string>
+    <string name="delete_all">Xóa tất cả</string>
+    <string name="from_job_text">từ công việc</string>
+
+    <!--    Wallet-->
+    <string name="wallet_title">Ví</string>
+    <string name="add_wallet">Thêm thẻ</string>
+    <string name="wallet_history">Lịch sử</string>
+    <string name="bank_name">Ngân hàng</string>
+    <string name="wallet_amount">Số dư</string>
+    <string name="card_number">Số thẻ</string>
+    <string name="choose_color">Chọn màu</string>
+    <string name="exp_date">Ngày hết hạn</string>
+    <string name="no_card">Không có thẻ trong ví</string>
+    <string name="error_invalid_bank">Không có ngân hàng</string>
+    <string name="error_invalid_exp_date">Không có ngày hết hạn</string>
+    <string name="error_invalid_card_num">Số thẻ có ít nhất 10 kí tự và tối đa 16 kí tự</string>
+    <string name="add_card_success">Thêm thẻ thành công</string>
+    <string name="add_card_fail">Thêm thẻ thất bại</string>
+    <string name="delete_card_success">Đã xóa thẻ</string>
+    <string name="add_cash_success">Thêm tiền vào thẻ thành công</string>
+    <string name="year">Năm</string>
+    <string name="month">Tháng</string>
+    <string name="no_choose_bank">Chưa chọn ngân hàng</string>
+    <string name="no_choose_year">Chưa chọn năm</string>
+    <string name="no_choose_month">Chưa chọn tháng</string>
+    <string name="duplicate_card">Thẻ này đã tồn tại</string>
+    <string name="no_history">Chưa có giao dịch nào</string>
+    <string name="choose_Bank">Chọn ngân hàng</string>
+    <string name="all_card">Tất cả thẻ</string>
+    <string name="withdraw">Rút tiền</string>
+    <string name="deposit">Nạp tiền vào ví</string>
+    <string name="withdraw_success">Rút tiền thành công</string>
+    <string name="deposit_success">Nạp tiền thành công</string>
+    <string name="no_amount">Số tiền trống</string>
+    <string name="not_enough_money">Số dư không đủ</string>
+    <string name="amount">Số tiền</string>
+    <string name="wallet_amount_title">Số dư:</string>
+    <string name="from_wallet">từ ví</string>
+    <string name="wallet_deposit_amount">Nhập số tiền nạp!</string>
+    <string name="wallet_deposit_success">Thanh toán thành công!</string>
+    <string name="wallet_deposit_failed">Thanh toán bị hủy!</string>
+    <string name="wallet_deposit_error">Lỗi thanh toán!</string>
+    <string name="wallet_deposit_input_confirmBTN">Xác nhận</string>
+    <string name="wallet_deposit_orderPayment_title">Xác nhận thanh toán</string>
+    <string name="wallet_deposit_orderPayment_total">Tổng thanh toán:</string>
+    <string name="wallet_deposit_payment">Thanh toán bằng ZaloPay</string>
+
+    <!--    Button-->
+    <string name="delete">Xóa thẻ</string>
+    <string name="cancel">Hủy</string>
+    <string name="add_cash">Thêm tiền vào thẻ</string>
+    <string name="add_card">Thêm thẻ</string>
+    <string name="Ok">Ok</string>
+
+
+    <!--    Trang cá nhân-->
+    <string name="username">Tên người dùng</string>
+    <string name="decoy_username">Tên người dùng</string>
+    <string name="profile_setting">Cài đặt</string>
+    <string name="profile_account">Tài Khoản</string>
+    <string name="profile_logout">Đăng xuất</string>
+    <string name="profile">Hồ sơ cá nhân</string>
+    <string name="profile_edited">Hồ sơ cá nhân đã được chỉnh sửa</string>
+    <string name="profile_logout_toast">Đăng xuất thành công</string>
+    <string name="blank_tax_code">Mã số thuế trống</string>
+
+
+    <!-- Edit Profile -->
+    <string name="edit_profile">Chỉnh sửa hồ sơ</string>
+    <string name="edit_profile_img">Nhấn để chỉnh sửa ảnh hiện tại</string>
+    <string name="edit_profile_name">Tên người dùng</string>
+    <string name="edit_profile_gender">Giới tính</string>
+    <string name="edit_profile_enterprise">Tên doanh nghiệp</string>
+    <string name="edit_profile_email">Email</string>
+    <string name="edit_profile_phonenum">Số điện thoại</string>
+    <string name="edit_profile_age">Tuổi</string>
+    <string name="edit_profile_gendermale">Nam</string>
+    <string name="edit_profile_genderfemale">Nữ</string>
+    <string name="edit_profile_genderother">Khác</string>
+    <string name="edit_profile_save">Lưu</string>
+    <string name="edit_profile_enable">Bật chỉnh sửa</string>
+    <string name="edit_profile_disable">Tắt chỉnh sửa</string>
+    <string name="edit_email">Email không được phép chỉnh sửa</string>
+    <string name="profile_image">Ảnh đại diện</string>
+    <string name="profile_image_discard">Xóa bỏ</string>
+    <string name="profile_image_choose">Chọn ảnh đại diện</string>
+    <string name="profile_image_please_choose">Vui lòng chọn ảnh để tải lên</string>
+    <string name="profile_image_uploading">Đang tải ảnh lên</string>
+    <string name="profile_image_process">Đang xử lý</string>
+    <string name="profile_image_save_success">Tải ảnh lên thành công</string>
+    <string name="profile_image_save_failed">Tải ảnh lên thất bại</string>
+    <string name="profile_image_deleted_success">Xóa ảnh thành công</string>
+    <string name="profile_image_delete_failed">Xóa ảnh thất bại</string>
+    <string name="edit_profile_nothing_change">Không có thay đổi nào được thực hiện đối với hồ sơ</string>
+
+    <string name="profile_image_delete_confim">Xác nhận xóa ảnh</string>
+    <string name="profile_image_delete_confim_noti">Lưu ý: Xóa ảnh hiện tại sẽ trở về ảnh đại diện mặc định.</string>
+    <string name="profile_image_delete_confim_yes">Có</string>
+    <string name="profile_image_delete_confim_no">Không</string>
+    <string name="profile_cancle_edit_confirm">Xác nhận hủy bỏ chỉnh sửa</string>
+    <string name="profile_cancle_edit_confirm_noti">Lưu ý: Việc hủy chỉnh sửa hiện tại sẽ không được lưu và quay lại thông tin trước khi sửa.</string>
+
+
+    <string name="edit_taxcode">Tax code</string>
+    <string name="edit_description">Mô tả thông tin nhà tuyển dụng</string>
+    <string name="edit_SectorOfBusiness">Chọn lĩnh vực kinh doanh</string>
+    <string name="edit_typeOfBusiness">Chọn loại hình kinh doanh</string>
+
+    <string name="error_invalid_des">Mô tả thông tin nhà tuyển dụng trống</string>
+    <string name="error_invalid_BusType">Lĩnh vực kinh doanh trống</string>
+    <string name="error_invalid_BusSec">loại hình kinh doanh trống</string>
+    <string name="error_invalid_Gender">Giới tính trống</string>
+    <string name="error_invalid_Age">Tuổi trống hoặc tuổi ít hơn 18 hoặc lớn hơn 80</string>
+    <string name="error_invalid_Tax">Mã số thuế không được trống và phải là 10 hoặc 13 số</string>
+
+    <!-- Settings Profile -->
+    <string name="Setting">Cài đặt</string>
+    <string name="Current_pass_title">Nhập mật khẩu hiện tại để xác minh</string>
+    <string name="Current_pass">Nhập mật khẩu hiện tại</string>
+    <string name="Change_pass">Đổi mật khẩu</string>
+    <string name="Biometric_login">Đăng nhập sinh trắc</string>
+    <string name="Delete_acc">Xóa tài khoản</string>
+    <string name="About_app">Về ứng dụng</string>
+    <string name="Change_newpass">Nhập mật khẩu mới</string>
+    <string name="Confirm_newpass">Xác nhận mật khẩu mới</string>
+    <string name="Change_newpass_success">Đã cập nhật mật khẩu thành công.</string>
+    <string name="Change_newpass_failed">Không cập nhật được mật khẩu. Vui lòng thử lại.</string>
+    <string name="Confirm">Xác nhận</string>
+    <string name="Confirm_change_pass">Xác nhận đổi mật khẩu</string>
+    <string name="Confirm_delete_account">Xác nhận xóa tài khoản</string>
+    <string name="Error_invalid_newpass">Mật khẩu mới trống hoặc không chính xác (tối thiểu 6 kí tự)</string>
+    <string name="Error_invalid_confirm_newpass">Xác nhận mật khẩu mới trống hoặc không khớp</string>
+    <string name="re_authen_failed">Xác thực lại không thành công. Vui lòng thử lại.</string>
+    <string name="account_deleted">Đã xóa tài khoản</string>
+    <string name="delete_account_failed">Xóa tài khoản không thành công. Vui lòng thử lại.</string>
+
+    <!-- About app-->
+    <string name="about_title_app">Về ứng dụng</string>
+    <string name="about_desc_app">JobFinder là nền tảng kết nối người tìm việc làm bán thời gian với các nhà tuyển dụng uy tín, giúp đôi bên tiết kiệm thời gian, công sức và cùng hướng tới lợi ích chung.</string>
+    <string name="about_title_us">Nhóm phát triển</string>
+    <string name="about_desc_us">Nhóm phát triển của chúng tôi là thành viên đến từ Đại học Công ngiệp Hà Nội, với mong muốn tạo ra giải pháp hiệu quả, tiết kiệm công sức để giải quyết bài toán tìm việc bán thời gian.</string>
+    <string name="about_title_goals">Mục tiêu</string>
+    <string name="about_desc_goals">Mục tiêu của chúng tôi là trở thành nền tảng tìm kiếm việc làm bán thời gian hàng đầu, cung cấp cơ hội việc làm chất lượng và phù hợp với mọi đối tượng.</string>
+    <string name="about_title_feaAndBen">Tính năng và lợi ích</string>
+    <string name="about_desc_feaAndBen">JobFinder cung cấp các tính năng chính như tìm kiếm việc làm, quản lý thu nhập, tìm kiếm ứng viên, quản lý nhân viên, đánh giá ứng viên,… và nhiều tính năng khác giúp bạn nhanh chóng đạt được mục tiêu mong muốn.</string>
+
+    <!--    Find new job-->
+    <string name="hint_search">Tìm kiếm</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="sortby">Lọc theo</string>
+    <string name="sort_JobTitle">Tên công việc</string>
+    <string name="sort_JT_All">Tất cả</string>
+    <string name="sort_JT_AtoZ">Thứ tự A-Z</string>
+    <string name="sort_Recname">Tên nhà tuyển dụng</string>
+    <string name="sort_Rec_All">Tất cả</string>
+    <string name="sort_Rec_AtoZ">Thứ tự A-Z</string>
+    <string name="sort_postedTime">Thời gian đăng</string>
+    <string name="sort_PT_Anytime">Mọi lúc</string>
+    <string name="sort_PT_Newest">Mới nhất</string>
+    <string name="sort_PT_thisMonth">Tháng này</string>
+    <string name="sort_workShift">Giờ làm</string>
+    <string name="sort_wShiftAM">Sáng</string>
+    <string name="sort_wShiftPM">Chiều</string>
+    <string name="sort_workTypes">Loại công việc</string>
+    <string-array name="initial_WShift_Slider_values">
+        <item>0</item>
+        <item>24</item>
+    </string-array>
+    <string name="sort_salary">Khoảng lương(/giờ)</string>
+    <string name="send">Nộp</string>
+    <string name="applied_success">Ứng tuyển thành công</string>
+    <string-array name="initial_slider_values">
+        <item>0.0</item>
+        <item>50000.0</item>
+    </string-array>
+    <string name="sort_resetCond">Đặt lại</string>
+    <string name="sort_applyCond">Áp dụng</string>
+    <string name="sort_applyFilterToast">Áp dụng bộ lọc</string>
+    <string name="sort_defaultSelectJobType">Tất cả các loại</string>
+
+
+
+    <!--    List job item-->
+    <string name="Ji_recName">Tên nhà tuyển dụng</string>
+    <string name="Ji_recAdd">Địa chỉ làm việc</string>
+    <string name="Ji_position">Intern Java</string>
+    <string name="Ji_num_of_rec_title">Số lượng:</string>
+    <string name="Ji_num_of_recruits">3</string>
+    <string name="Ji_sub">Người</string>
+    <string name="Ji_workTime">Giờ làm:</string>
+    <string name="Ji_recruited1">Đã tuyển:</string>
+    <string name="Ji_recruited2">0</string>
+    <string name="Ji_posttime">45 phút trước</string>
+    <string name="Ji_appliDeadlineTitle">Hạn ứng tuyển:</string>
+    <string name="Ji_appliDeadline">dd/mm/yyyy</string>
+    <string name="Ji_unit1">$</string>
+    <string name="Ji_salary">20,000</string>
+    <string name="Ji_unit2">VNĐ</string>
+    <string name="Ji_unit3">/Giờ</string>
+
+    <!--    post job-->
+    <string name="post_job_title">Tên công việc</string>
+    <string name="job_des">Mô tả công việc</string>
+    <string name="salary">Mức lương (/giờ)</string>
+    <string name="employee_amount">Số người</string>
+    <string name="start_time">Ngày bắt đầu</string>
+    <string name="end_time">Ngày kết thúc</string>
+    <string name="shift">Ca làm</string>
+    <string name="shift_1">Giờ bắt đầu ca</string>
+    <string name="shift_2">Giờ kết thúc ca</string>
+    <string name="add_job">Đăng tuyển</string>
+    <string name="shift_start_blank">Chưa chọn giờ bắt đầu ca</string>
+    <string name="shift_end_blank">Chưa chọn giờ kết thúc ca</string>
+    <string name="end_shift_time_be4_start">Giờ kết thúc phải sau giờ bắt đầu ít nhất 1 giờ</string>
+    <string name="no_shift_choose">Chưa chọn ca làm</string>
+    <string name="no_post_job_title">Chưa có tiêu đề</string>
+    <string name="no_emp_amount">Số lượng nhân viên dưới 10</string>
+    <string name="no_address">Địa chỉ trống</string>
+    <string name="no_job_des">Mô tả công việc trống</string>
+    <string name="no_salary">Lương trống</string>
+    <string name="post_job_success">Đã đăng</string>
+    <string name="no_start_time">Ngày bắt đầu trống</string>
+    <string name="no_end_time">Ngày kết thúc trống</string>
+    <string name="end_time_be4_start">Ngày kết thúc phải sau ngày bắt đầu</string>
+    <string name="job_type">Loại công việc</string>
+    <string name="expense">Chi phí:</string>
+    <string name="total_cost">Tổng:</string>
+    <string name="app_cost">Phí ứng dụng: </string>
+    <string-array name="job_types_array">
+        <item>Nhân viên bán hàng</item>
+        <item>Phục vụ</item>
+        <item>Trợ lý hành chính</item>
+        <item>Gia sư</item>
+        <item>Pha chế cà phê</item>
+        <item>Thu ngân</item>
+        <item>Nhân viên giao hàng</item>
+        <item>Lễ tân</item>
+        <item>Khác</item>
+    </string-array>
+
+
+    <!--    job detail-->
+    <string name="apply">Ứng tuyển</string>
+    <string name="unapply">Hủy ứng tuyển</string>
+    <string name="unapplied_success">Hủy thành công</string>
+    <string name="unapply_failed">Hủy thất bại</string>
+    <string name="job_detail_title">Chi tiết công việc</string>
+    <string name="jdetail_shift_1">7:30-14:30</string>
+    <string name="jdetail_shift_2">14:30-21:30</string>
+    <string name="status_row_posted_job">Trạng thái:</string>
+    <string name="status">Trạng thái</string>
+    <string name="status_working">Đang hoạt động</string>
+    <string name="status_recruiting">Đang tuyển</string>
+    <string name="status_closed">Đã đóng</string>
+    <string name="temporarily_closed">Tạm đóng</string>
+    <string name="applicant">Ứng viên</string>
+    <string name="Jd_delete">xóa</string>
+
+    <!--    posted job-->
+    <string name="posted_job_title">Việc đã đăng</string>
+    <string name="no_posted_job">Chưa đăng tuyển</string>
+    <string name="deleted_job">Đã xóa công việc</string>
+
+    <!--    buser detail info-->
+    <string name="recruiter_info_title">Nhà tuyển dụng</string>
+    <!--    nuser detail info-->
+    <string name="seeker_info_title">Thông tin ứng viên</string>
+
+    <!--    applicants list-->
+    <string name="applicant_list_title">Danh sách ứng viên</string>
+    <string name="no_applicant">Chưa có ứng viên</string>
+    <string name="approve">Phê duyệt</string>
+    <string name="reject">Từ chối</string>
+    <string name="blank_age">Tuổi trống</string>
+    <string name="enough_Emp">Đã tuyển đủ nhân viên</string>
+
+    <!--    applied job-->
+    <string name="approved">Đã phê duyệt</string>
+    <string name="rejected">Đã từ chối</string>
+    <string name="Job_title">Tên công việc:</string>
+    <string name="Applied_date">Thời gian ứng tuyển:</string>
+    <string name="no_data_applied_msg">Chưa ứng tuyển công việc nào</string>
+
+
+    <!--    Report-->
+    <string name="create_request">Tạo yêu cầu</string>
+    <string name="technical_report">Kỹ thuật</string>
+    <string name="feedback_report">Góp ý</string>
+    <string name="user_report">Báo cáo</string>
+    <string name="create_technical_report">Tạo yêu cầu kỹ thuật</string>
+    <string name="create_feedback">Tạo góp ý</string>
+    <string name="create_user_report">Tạo báo cáo người dùng</string>
+    <string name="send_request">gửi yêu cầu</string>
+    <string name="note">Ghi chú</string>
+    <string name="enter_note">Nhập ghi chú</string>
+    <string name="report_status">Tình trạng</string>
+    <string name="your_status">Tình trạng của Quý khách</string>
+    <string name="your_condition">Tình trạng của Quý khách</string>
+    <string name="request_sent">Đã gửi yêu cầu</string>
+    <string name="request_sent_error">Không có yêu cầu nào được gửi</string>
+
+    <string-array name="technical_array">
+        <item>Lỗi kết nối thẻ ngân hàng</item>
+        <item>Không thể lưu thông tin hồ sơ</item>
+        <item>Khác</item>
+    </string-array>
+
+    <string-array name="feedback_array">
+        <item>Góp ý ứng dụng</item>
+        <item>Góp ý phục vụ</item>
+        <item>Khác</item>
+    </string-array>
+
+    <string-array name="report_array">
+        <item>Báo cáo người dùng</item>
+        <item>Báo cáo doanh nghiệp</item>
+    </string-array>
+
+    <!--    working job-->
+    <string name="job_management_title">Quản lí công việc</string>
+    <string name="working_job_title">Việc đang hoạt động</string>
+    <string name="no_wkJob">Không có công việc nào</string>
+    <string name="no_emp">Không có nhân viên</string>
+    <string name="empListTitle">Danh sách nhân viên</string>
+    <string name="check_in">Điểm danh</string>
+    <string name="check_out">Kết thúc ca</string>
+    <string name="checked">Đã điểm danh</string>
+    <string name="checked_in">Đã đến</string>
+    <string name="checked_out">Đã về</string>
+    <string name="working_job_short_title">Đang hoạt động</string>
+
+    <!--    check in-->
+    <string name="check_in_title">Điểm danh</string>
+    <string name="late">Muộn</string>
+    <string name="in_time">Đúng giờ</string>
+    <string name="check_in_status">Điểm danh lúc: </string>
+    <string name="check_out_status">Ra về lúc lúc: </string>
+    <string name="minute">phút</string>
+    <string name="confirm_check_in">Xác nhận</string>
+    <string name="confirmed">Đã xác nhận</string>
+    <string name="unconfirmed">Chưa xác nhận</string>
+    <string name="at">lúc</string>
+    <string name="not_working_yet">Việc chưa hoạt động</string>
+    <string name="check_out_notice">Nhận lương của bạn\nở Quản lí công việc</string>
+
+<!--    salary tracking-->
+    <string name="salary_tracking_title">Theo dõi lương</string>
+    <string name="no_working">Chưa có hoạt động</string>
+    <string name="salary_title">Lương</string>
+    <string name="note_title">Ghi chú</string>
+    <string name="working_time">Ngày/Giờ làm</string>
+    <string name="total_salary">Tổng</string>
+    <string name="worked_day">Ngày làm</string>
+    <string name="end_job">Kết thúc việc</string>
+
+    <!--    job history-->
+    <string name="job_workingReview_title">Đánh giá</string>
+    <string name="no_review">Chưa có đánh giá</string>
+    <string name="no_job_history">Lịch sử trống</string>
+    <string name="not_review">Chưa đánh giá</string>
+    <string name="save">Lưu</string>
+    <string name="review_nuser">Đánh giá nhân viên của bạn sau khi hoàn thành việc</string>
+    <string name="no_des">Đánh giá trống</string>
+    <string name="no_job_des2">Mô tả trống</string>
+    <string name="review">Đánh giá</string>
+    <!--    watch reviewed nuser-->
+    <string name="review_rating_Average">Đánh giá:</string>
+    <string name="review_rating_sub_title_default">(Chưa có đánh giá)</string>
+    <string name="review_recycler_title">Đánh giá từ các nhà tuyển dụng</string>
+    <string name="review_recycler_no_reviewed">Ứng viên chưa có đánh giá</string>
+    <string name="review_ex_comp_jobtitle">Công việc:</string>
+
+    <!--    statistical-->
+    <string name="Sta_mainTitle">Thống kê</string>
+    <string name="Sta_IncomeExpend">Báo cáo thu chi</string>
+    <string name="Sta_labelBarchart_income">Thu nhập</string>
+    <string name="Sta_labelBarchart_expenditure">Chi tiêu</string>
+    <string name="Sta_Monyea_select">Tháng/Năm</string>
+    <string name="Sta_income_each_typeJob">Thu nhập từ loại công việc</string>
+    <string name="Sta_expense_each_typeJob">Chi tiêu cho loại công việc</string>
+    <string name="Sta_wallet">Ví</string>
+    <string name="Sta_card">Thẻ</string>
+    <string name="Sta_workingHourPMonth">Số giờ làm việc mỗi tháng</string>
+    <string name="Sta_amountJobPostPMonth">Số việc đăng tuyển mỗi tháng</string>
+    <string name="Sta_year_select">Năm</string>
+    <string name="Sta_workedHourPMonth_legend">Số giờ làm</string>
+    <string name="Sta_jobs_posted">Số công việc đăng tuyển</string>
+    <string name="Sta_jobs_posted_legend">Việc đăng tuyển</string>
+    <string-array name="months_array">
+        <item>T1</item>
+        <item>T2</item>
+        <item>T3</item>
+        <item>T4</item>
+        <item>T5</item>
+        <item>T6</item>
+        <item>T7</item>
+        <item>T8</item>
+        <item>T9</item>
+        <item>T10</item>
+        <item>T11</item>
+        <item>T12</item>
+    </string-array>
+    <string name="week">Tuần</string>
+
+    <!--    Admin-->
+    <string name="admin_welcome">Chào mừng Admin</string>
+    <string name="grid_admin_accMana">Tài khoản người dùng</string>
+    <string name="grid_admin_Finance">Tài chính</string>
+    <string name="grid_admin_RepRes">Phản hồi báo cáo</string>
+    <string name="grid_admin_logout">Đăng xuất</string>
+    <string name="grid_admin_changePass">Đổi mật khẩu</string>
+    <string name="no_report">Chưa có báo cáo</string>
+    <string name="close_report">Đóng báo cáo</string>
+    <string name="report_response1">Vấn đề mà bạn báo cáo đã được xử lí. \n Cảm ơn đã gửi phản hồi cho chúng tôi.</string>
+    <string name="technic_title">Kỹ thuật</string>
+    <string name="feedback_title">Phản hồi</string>
+    <string name="report_title">Báo cáo</string>
+    <string name="buser">Nhà tuyển dụng</string>
+    <string name="nuser">Người tìm việc</string>
+    <string name="registered_amount">Báo cáo số lượng người đăng ký sử dụng ứng dụng</string>
+    <string name="admin_income">Lợi nhuận của ứng dụng theo năm</string>
+    <string name="unit">VNĐ</string>
+    <string name="user_managerment_title">Quản lí nguời dùng</string>
+    <string name="no_user">Không có người dùng đã đăng ký</string>
+    <string name="email_title">Email: </string>
+    <string name="phone_num_title">Số điện thoại: </string>
+    <string name="address_title">Địa chỉ: </string>
+    <string name="role_title">Vai trò: </string>
+
+    <string name="add_cash_to_wallet_btn">Nạp tiền</string>
+    <string name="disable_acc">Vô hiệu hóa</string>
+    <string name="enable_acc">Kích hoạt</string>
+    <string name="blank_sector">Lĩnh vực trống</string>
+    <string name="to_wallet2">vào ví bởi quản trị viên</string>
+    <string name="disabled_account">Tài khoản này đã bị vô hiệu hóa</string>
+    <string name="active">Đang hoạt động</string>
+</resources>

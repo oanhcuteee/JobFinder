@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bank_agribank"
+        android:title="Agribank" />
+    <item
+        android:id="@+id/bank_bidv"
+        android:title="BIDV" />
+    <item
+        android:id="@+id/bank_donga"
+        android:title="DongA Bank" />
+    <item
+        android:id="@+id/bank_mbbank"
+        android:title="MBBank" />
+    <item
+        android:id="@+id/bank_pvcombank"
+        android:title="PVcomBank" />
+    <item
+        android:id="@+id/bank_sacombank"
+        android:title="Sacombank" />
+    <item
+        android:id="@+id/bank_tpbank"
+        android:title="TPBank" />
+    <item
+        android:id="@+id/bank_techcombank"
+        android:title="Techcombank" />
+    <item
+        android:id="@+id/bank_vietcombank"
+        android:title="Vietcombank" />
+    <item
+        android:id="@+id/bank_vietinbank"
+        android:title="VietinBank" />
+</menu>

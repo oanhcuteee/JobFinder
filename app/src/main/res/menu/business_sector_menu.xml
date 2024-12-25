@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rec_sec_ECommerce"
+        android:title="@string/rec__sec_ECommerce"
+        />
+    <item
+        android:id="@+id/rec_sec_realestate"
+        android:title="@string/rec_sec_realestate"
+        />
+    <item
+        android:id="@+id/rec_sec_manufacturing"
+        android:title="@string/rec_sec_manufacturing"
+        />
+    <item
+        android:id="@+id/rec_sec_FandB"
+        android:title="@string/rec_sec_FandB"
+        />
+    <item
+        android:id="@+id/rec_sec_finance"
+        android:title="@string/rec_sec_finance"
+        />
+    <item
+        android:id="@+id/rec_sec_tourism"
+        android:title="@string/rec_sec_tourism"
+        />
+    <item
+        android:id="@+id/rec_sec_other"
+        android:title="@string/rec_sec_other"
+        />
+
+</menu>
